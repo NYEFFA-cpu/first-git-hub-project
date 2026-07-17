@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact · Campus Quest</title>
+    <link rel="stylesheet" href="STYLE.css" />
+    <!-- (Optional) Add a favicon or extra meta tags here -->
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <h1>🗺️ Join the Adventure</h1>
+        <p>Become part of <strong>Campus Quest</strong> · University of Copenhagen</p>
+    </header>
+
+    <!-- ========== CONTACT INFORMATION ========== -->
+    <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">📬 Contact Information</h2>
+
+        <div>
+            <h3>📍 Address</h3>
+            <address>
+                University of Copenhagen<br />
+                Campus Quest Office<br />
+                Universitetsparken 1<br />
+                2100 Copenhagen Ø<br />
+                Denmark
+            </address>
+        </div>
+
+        <div>
+            <h3>📧 Email</h3>
+            <p>
+                General inquiries: <a href="mailto:info@campusquest.ku.dk">info@campusquest.ku.dk</a><br />
+                Campus Quest team: <a href="mailto:quest@campusquest.ku.dk">quest@campusquest.ku.dk</a>
+            </p>
+        </div>
+
+        <div>
+            <h3>📞 Phone</h3>
+            <p>
+                Main office: <a href="tel:+4512345678">+45 12 34 56 78</a><br />
+                Campus Quest hotline: <a href="tel:+4587654321">+45 87 65 43 21</a>
+            </p>
+        </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== REGISTRATION FORM ========== -->
+    <section aria-labelledby="form-heading">
+        <h2 id="form-heading">📝 Register for Campus Quest</h2>
+        <p>Join the ultimate campus adventure! Fill out the form below to become a part of the quest.</p>
+
+        <form action="#" method="post">
+
+            <!-- === First Name === -->
+            <div class="form-group">
+                <label for="firstName">First Name: <span aria-hidden="true">*</span></label>
+                <input type="text" id="firstName" name="firstName" required placeholder="e.g. Ada" />
+            </div>
+
+            <!-- === Last Name === -->
+            <div class="form-group">
+                <label for="lastName">Last Name: <span aria-hidden="true">*</span></label>
+                <input type="text" id="lastName" name="lastName" required placeholder="e.g. Lovelace" />
+            </div>
+
+            <!-- === Email === -->
+            <div class="form-group">
+                <label for="email">Email: <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="ada@example.ku.dk" />
+            </div>
+
+            <!-- === Phone === -->
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+45 12 34 56 78" />
+            </div>
+
+            <!-- === Course === -->
+            <div class="form-group">
+                <label for="course">Course / Department:</label>
+                <input type="text" id="course" name="course" placeholder="e.g. Computer Science" />
+            </div>
+
+            <!-- === Year of Study === -->
+            <fieldset class="form-group">
+                <legend><strong>Year of Study:</strong></legend>
+                <label><input type="radio" name="year" value="1st Year" /> 1st Year</label>
+                <label><input type="radio" name="year" value="2nd Year" /> 2nd Year</label>
+                <label><input type="radio" name="year" value="3rd Year" /> 3rd Year</label>
+                <label><input type="radio" name="year" value="4th Year" /> 4th Year</label>
+                <label><input type="radio" name="year" value="Master's" /> Master's</label>
+                <label><input type="radio" name="year" value="PhD" /> PhD</label>
+            </fieldset>
+
+            <!-- === Favourite Club === -->
+            <div class="form-group">
+                <label for="favouriteClub">Favourite Club:</label>
+                <select id="favouriteClub" name="favouriteClub">
+                    <option value="">-- Select a club --</option>
+                    <option value="chess">Chess Club</option>
+                    <option value="anime">Anime Club</option>
+                    <option value="coding">Coding Club</option>
+                    <option value="photography">Photography Club</option>
+                    <option value="debate">Debate Club</option>
+                    <option value="robotics">Robotics Club</option>
+                    <option value="environmental">Environmental Club</option>
+                    <option value="music">Music Club</option>
+                </select>
+            </div>
+
+            <!-- === Favourite Meal === -->
+            <div class="form-group">
+                <label for="favouriteMeal">Favourite Meal:</label>
+                <select id="favouriteMeal" name="favouriteMeal">
+                    <option value="">-- Select a meal --</option>
+                    <option value="smorrebrod">Nordic Smørrebrød</option>
+                    <option value="buddha">Vegan Buddha Bowl</option>
+                    <option value="burger">Classic Burger</option>
+                    <option value="carbonara">Pasta Carbonara</option>
+                    <option value="caesar">Caesar Salad</option>
+                    <option value="sushi">Sushi Roll Set</option>
+                    <option value="salmon">Grilled Salmon</option>
+                    <option value="pizza">Margherita Pizza</option>
+                    <option value="tikka">Chicken Tikka Masala</option>
+                    <option value="brownie">Chocolate Brownie</option>
+                </select>
+            </div>
+
+            <!-- === Interests (checkboxes) === -->
+            <fieldset class="form-group">
+                <legend><strong>What are you most excited about? (check all that apply)</strong></legend>
+                <label><input type="checkbox" name="interests" value="sports" /> Sports &amp; Fitness</label>
+                <label><input type="checkbox" name="interests" value="technology" /> Technology &amp; Innovation</label>
+                <label><input type="checkbox" name="interests" value="culture" /> Culture &amp; Arts</label>
+                <label><input type="checkbox" name="interests" value="food" /> Food &amp; Dining</label>
+                <label><input type="checkbox" name="interests" value="community" /> Community &amp; Social</label>
+                <label><input type="checkbox" name="interests" value="nature" /> Nature &amp; Environment</label>
+            </fieldset>
+
+            <!-- === Message === -->
+            <div class="form-group">
+                <label for="message">Message / Special Requests:</label>
+                <textarea id="message" name="message" rows="5" cols="50" placeholder="Tell us why you want to join Campus Quest or any special requirements..."></textarea>
+            </div>
+
+            <!-- === Buttons === -->
+            <div class="form-actions">
+                <button type="submit">🚀 Join the Quest</button>
+                <button type="reset">🧹 Clear Form</button>
+            </div>
+
+        </form>
+    </section>
+
+    <hr />
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>🏛️ University of Copenhagen · © 2026 · Campus Quest</p>
+    </footer>
+
+</body>
+</html>

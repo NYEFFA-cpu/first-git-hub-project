@@ -1,0 +1,131 @@
+/* Removes default browser margins/ padding and sets global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url( https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNmE1NjM0YzE4NTg4ODE5MTkzYWU1NDk4Y2FmZGRmZTE6ZmlsZV8wMDAwMDAwMDI2MWM3MWY0YWJmZDY2ZDYzNzYyOTY1NSIsImdpem1vX2lkIjpudWxsLCJ0cyI6IjIwNjQ4IiwicCI6InB5aSIsImNpZCI6IjEiLCJzaWciOiI5ZjlhNDVhYzYxNzQ4N2U1NDhjNzM5NDY3ZjcwMTE5ZmUxOGU4NWMzNDU5Mjk4NTE4ZTkyN2NlNTFhMGJkZDg4IiwidiI6IjAiLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJmbiI6bnVsbCwiY2QiOm51bGwsImNwIjpudWxsLCJtYSI6bnVsbH0= );
+    color: rgb(109, 175, 240);
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/*---headings (h1-h6)---*/
+/*---all headings are the same---*/
+    h1,h2,h3,h4,h5,h6 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: 7, 84, 237;
+        margin-top :20px; 
+        margin-bottom: 10px;
+        border-bottom: 2px slategrey;
+        padding-bottom: 8px;
+    }
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+        color: aqua;
+    }
+    h2{
+        font-size: 32pt;
+        color: #6bb8ff;;
+    }
+    h3{
+        font-size: 24px;
+        color:  #88c8fd;;
+    }
+    /*---paragraph---*/
+    p{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    /*---links---*/
+    a{
+        color: aquamarine;
+        text-decoration: none;
+        transition: color 0.4 ease;
+    }
+    /*---nav&ul---*/
+    nav{
+        background-color: darkblue;
+        padding: 12px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        
+    }
+nav ul li a{
+     color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #ff9900; /* Orange background on hover */
+    color: #003366;
+    
+}
+ /*---tables--*/
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+ }
+ /*----footer---*/
+ footer{
+    background-color: #003366;
+    color: aliceblue;
+    text-align: center;
+    padding: 19px 21px;
+    border-radius: 30px;
+    margin-top: 40px;
+    font-size: 15px;
+ }
+ footer p {
+    margin: 0;
+ }
+ /* ---------- IMAGES ---------- */
+/* Makes images responsive and adds rounded corners */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin: 10px 0;
+}
+
+/* ---------- LISTS (ol, ul) ---------- */
+ol, ul {
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+/*---GRID LAYOUT ( for gallery and cards)---*/
+grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(280px,1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
+.grid-item{
+    background: #ffffff;
+    padding: 16px;
+    border: 1px solid #e2e840;
+    transition: transform 0.2 ease;
+}
